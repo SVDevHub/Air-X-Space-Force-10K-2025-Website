@@ -1,0 +1,500 @@
+/*** You will not need this file until Unit 3 ***/
+/*** VSCodeEDU preview fix 
+
+  Purpose:
+  - Fix VSCodeEDU issue that causes a white border to show around
+    the preview window
+
+  When To Modify:
+  - If you change the background color of your webpage, you may need to update this rule too.
+***/
+html {
+    background-color: var(--bg-color);
+}
+
+/*** body ***
+  
+  Purpose:
+  - Add style rules for the body of your webpage
+  - This is useful if you want a rule to apply to EVERYTHING on your page
+    - (Tip: You can always override these rules later in the stylesheet)
+
+  When To Modify:
+  - [ ] Project 3 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+body {
+    background-color: var(--bg-color); 
+    font-size: 16px;
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+}
+
+.text-left ul li {
+  margin-bottom: 15px;
+}
+
+
+/*** Text ***
+  
+  Purpose: 
+  - Add style rules for headings (h1-6),
+    paragraphs (p), links (a), and buttons
+
+  When To Modify:
+  - [X] Project 3 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+h1 {
+  color: white;
+  font-size: clamp(24px, 5vw, 60px);
+  background-color: #333333;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-align: left;
+  white-space: nowrap;
+  margin-bottom: 5px;
+}
+
+
+h2 {
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 5px;
+  
+}
+
+h3 {
+   margin-top: 10px;
+  
+}
+
+p {
+   color: white; 
+}
+
+
+button {
+    font-family: 'Inter', sans-serif;
+    background-color: #333333;     
+    color: white;                
+    border: none;               
+    padding: 8px 15px;          
+    border-radius: 50px;         
+    cursor: pointer;           
+}
+
+
+button:hover {
+   background-color: #3c53c6;
+}
+
+/*** header ***
+  
+  Purpose:
+  - Add style rules for your website's header section
+
+  When To Modify:
+  - [X] Project 3 (REQUIRED FEATURE) 
+  - [ ] Project 4 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+.header-sub {
+ display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 20px;
+  margin-top: 40px;
+}
+
+.header-logo {
+  width: 100%;
+  max-width: 600px; /* Prevents it from getting too large */
+  height: auto;
+}
+
+#header-img {
+  width: 100%;
+  max-width: 150px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.header-button {
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.about-heading {
+    text-align: center;
+    font-size: 30px;
+    margin-left: 0;      
+    margin-bottom: 60px; 
+    margin-top: 80px; 
+}
+
+.about-heading + p {
+  text-align: left;
+  margin-left: 0; 
+}
+
+.about-content {
+  display: flex;          
+  gap: 20px;              
+  align-items: flex-start;        
+  width: 100%;                        
+}
+
+
+.about-content iframe {
+  width: 700px;           
+  max-width: 100%;      
+  aspect-ratio: 16 / 9;   
+  height: auto;
+  border: none;
+  border-radius: 10px;    
+}
+
+.about-content p {
+  max-width: none;
+  font-size: clamp(14px, 2vw, 18px);
+  line-height: 1.6;
+  padding: 10px;
+}
+
+
+
+.text-left {
+  text-align: left;
+}
+
+.event-schedule-heading {
+    text-align: center;
+    margin-top: 50px;  
+    margin-bottom: 10px; 
+    margin-left: 0;
+}
+
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-item:nth-of-type(1) {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-item:nth-of-type(2) {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+
+.left-align {
+  text-align: left;
+  font-size: 16px;
+  background-color: #333333; 
+  padding: 8px 15px;
+  border-radius: 50px;  
+}
+
+.right-align {
+  text-align: right;
+  font-size: 16px;
+  background-color: #333333; 
+  padding: 8px 15px;
+  border-radius: 50px;  
+}
+
+.expect-heading {
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+.schedule-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.schedule-text {
+  max-width: 600px;
+  text-align: center;
+}
+
+.schedule-item img {
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+.schedule-text p {
+  text-align: left;
+}
+
+
+.about-content.video-text-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.about-content.video-text-container p {
+  max-width: 600px;
+  margin: 0;
+}
+
+
+/*** footer ***
+  
+  Purpose:
+  - Add style rules for your website's footer section
+
+  When To Modify:
+  - [ ] Project 3 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+.footer { /* Example B: This styles elements with class="footer" */
+    
+}
+
+/*** Navigation bar (navbar) ***
+  
+  Purpose:
+  - Add style rules for your website's navbar
+
+  When To Modify:
+  - [ ] Project 4 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+.navbar ul {
+    list-style-type: none;
+    background-color: #333333; 
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin:0; 
+    z-index: 1000; 
+}
+
+
+.navbar ul li {
+    float: left;
+    margin: 10px;
+}
+
+.navbar ul li a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff; 
+    text-align: left;
+    padding: 12px 6px;
+}
+
+
+.navbar ul li a:hover {
+    color: #657fff; 
+             
+}
+
+/* Adds padding to the top of the body to keep navbar from covering things */
+html {
+    scroll-padding-top: 100px; /* Adjust to match height of your navbar */
+}
+
+/*** About Section ***
+  
+  Purpose:
+  - Add style rules for your website's About section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+
+/*** Schedule Section ***
+  
+  Purpose:
+  - Add style rules for your website's Schedule section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+
+/*** Links Section ***
+  
+  Purpose:
+  - Add style rules for your website's Links section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+/*** RSVP Section ***
+  
+  Purpose:
+  - Add style rules for your website's RSVP form
+
+  When To Modify:
+  - [ ] Project 6 (REQUIRED FEATURE)
+  - [ ] Project 7 (REQUIRED FEATURE)
+  - [ ] Any time after
+***/
+
+.rsvp-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.rsvp-para {
+  width: 55%;
+  padding-right: 10px;
+}
+
+.rsvp-participants {
+  width: 45%;
+  padding-right: 10px;
+}
+
+.error {
+  border: 2px solid red;
+  background-color: #dbbfc1; 
+}
+
+/* Add other rsvp-related selectors here */
+
+/*** Animations [PLACEHOLDER] [ADDED IN UNIT 8] ***/
+/*** Success Modal  ***
+  
+  Purpose:
+  - Add style rules to your website's pop-up modal, which appears
+    when a user successfully submits the RSVP form
+
+  When To Modify:
+  - [ ] Project 9 (REQUIRED FEATURE)
+  - [ ] Any time after
+***/
+
+.modal {
+  display: none;   /* modal should be hidden by default*/
+  position: fixed; /* modal cannot move around the screen */
+  z-index: 2;      /* modal appears above other elements */ 
+  
+  /* TODO: Make the modal fill the entire screen */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  /* Add a semi-transparent background to shadow non-modal elements*/
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black */
+
+  /* Flexbox settings for modal */
+  /* These won't apply until we update "display:" from "hidden" to "flex" in our JS */
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-container {
+    /* Change modal size and spacing here */
+    padding: 50px;
+    width: 55%;
+
+    /* Customize modal style here */
+    background-color: lightsteelblue;
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+    font-family: monospace;
+
+    /* Optional: Use flexbox to customize .modal-item layout */
+    display: flex;
+
+}
+
+.modal-item {
+    /* Optional: Style individual elements within the modal */
+}
+
+
+/* Default light mode style */
+.light-mode {
+background-color: rgb(84, 84, 84);
+transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Example: Different dark mode style for h1 */
+.light-mode h1 {
+}
+
+/* Example: Different dark mode style for visited links */
+.light-mode a:visited * {
+
+}
+
+/*** Custom Colors (OPTIONAL) ***
+  
+  Purpose:
+  - Use CSS variables to define custom colors for your website
+  - To get you started, we've provided the color scheme used in our example site.
+  - To reference a color variable in your css, use var(--variable-name) in place of a color value
+
+  When To Modify:
+  - [ ] Any time (OPTIONAL)
+***/
+
+:root {
+    /* Light Mode */
+    --bg-color: #000000;
+    --text-color: #ffffff;
+
+    /* Dark Mode */
+    --bg-color-dark-mode: #3e3377;
+    --text-color-dark-mode: #fff;
+
+    /* Accent Colors */
+    --accent-color-light: #d2cff5;
+    --accent-color-medium: #684fb5;
+    --accent-color-dark: #482f95;
+    --accent-color-darkest: #231942;
+    --accent-color-green: #28eb76;
+
+    /* Error Colors */
+    --error-color: #f8bbd0;
+    --error-color-border:
+}

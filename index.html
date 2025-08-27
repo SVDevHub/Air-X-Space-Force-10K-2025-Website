@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- head
+
+        Purpose:
+        - Title used here shows up in the browser tab
+        - Link to the favicon (small image that appears in the browser tab)
+        - Link to the CSS file (used to style the webpage)
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) (favicon)
+        - [ ] Any time after
+        -->
+        <link rel="stylesheet" href="styles.css">
+        <title>Air Force X Space Force 10K 2025</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+    
+        <!-- navbar
+
+Purpose:
+- Navigation bar that allows users to jump to different sections of the webpage
+- Also holds buttons for user settings (dark mode, reduce motion)
+
+When To Modify:
+- [ ] Project 4 (REQUIRED FEATURE)
+- [ ] Project 5 (REQUIRED FEATURE) 
+- [ ] Project 8 (STRETCH FEATURE) 
+- [ ] Any time between / after
+-->
+<div class="navbar">
+    <ul>
+    <li><a href="#Home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#WhattoExpect">What to Expect</a></li>
+    <li><a href="#EventSchedule">Event Schedule</a></li>
+    <li><button id="theme-button" type="button">Light Mode</button></li>
+    </ul>
+</div>
+
+        <!-- headings
+
+        Purpose:
+        - Main header section of the webpage
+        - Contains the title, subtitle, image, and key buttons for the webpage
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 3 (REQUIRED FEATURE) 
+        - [ ] Project 4 (REQUIRED FEATURE) 
+        - [ ] Any time after
+        -->
+<div class="header-sub" id="Home">
+  <div class="header-item">
+    <!-- Left side content: the image -->
+    <img alt="Air Force and Space Force Logos" class="header-logo" src="./img/TransparentLogo.png" />
+  </div>
+
+  <div class="header-item">
+    <!-- Right side content: the h1, h2, buttons -->
+    <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 10px;">
+      <div>
+        <h1>Air X Space Force 10K 2025</h1>
+        <h2>Running Below. Reaching Beyond</h2>
+      </div>
+      <div class="header-button" style="display: flex; gap: 10px;">
+        <button type="button">Register Now</button>
+        <button type="button">Awards & Prizes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="header-container">
+  <h3 class="left-align">Date & Time: Saturday January 6, 2026 at 8am.</h3>
+  <h3 class="right-align">Location: 2354 Fairchild Dr Suite 3A15, Air Force Academy, Colorado 80840.</h3>
+</div>
+
+        <!-- about
+
+        Purpose:
+        - Section for general info about the event
+        - Contains a video, description, and key points about the event
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+       <h2 class="about-heading" id="about">About the Event</h2>
+        <div class="about-content video-text-container">
+        <iframe 
+        src="https://www.youtube.com/embed/dcr5QhSInpk" 
+        frameborder="0" allowfullscreen>
+        </iframe>
+        <p>
+         The Air X Space Force 10K 2025 is a collaborative running event that celebrates unity, strength, and a shared mission between two cutting edge branches of the U.S. military. Designed to showcase mutual support for their respective causes, this event brings together service members, veterans, and civilians in a high energy 10K open to the public. Whether you're running in uniform or alongside military supporters, participants will honor the values of excellence, resilience, and innovation. This event is more than a race; it is a symbol of air and space power moving forward together.
+        </p>
+        </div>
+
+      
+     <div class="text-left" id="WhattoExpect">
+  <h3 class="expect-heading">What to Expect</h3>
+  <h4 style="font-size: 22px;">A great time for everyone</h4>
+  <ul>
+      <li><b>Breathtaking Course:</b> <i>Run a challenging yet inspiring 10K through the prestigious U.S. Air Force Academy, featuring mountain views, crisp air, and historic landmarks</i></li>
+      <li><b>Post-Race Party:</b> <i>Celebrate your accomplishment with fellow runners at a high-energy gathering on base, complete with music, games, and patriotic spirit</i></li>
+      <li><b>Free Food:</b> <i>Enjoy complimentary snacks and refreshments at the finish line, including protein-packed options to help you recharge and recover.</i></li>
+  </ul>
+</div>
+
+        <!-- schedule
+
+        Purpose:
+        - Section for specific info about the event's schedule
+        - Contains images and descriptions of each activity
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+<h2 class="event-schedule-heading" id="EventSchedule">Event Schedule</h2>
+
+<div class="schedule-item">
+  <img src="./img/Startline.png" alt="A banner picture of air force and space force" width="300" height="200" />
+  <div class="schedule-text">
+    <h3>8am - Race Starts</h3>
+    <p>The race kicks off promptly at 8:00 AM, so punctuality is key. We recommend arriving at least 30–45 minutes early to allow time for parking, check-in, bib pickup, and a proper warm-up. Use this time to stretch, hydrate, and get familiar with the starting area.</p>
+  </div>
+</div>
+
+<div class="schedule-item">
+  <img src="./img/Breakfastburritos.png" alt="A picture of runners at event" width="300" height="200" />
+  <div class="schedule-text">
+    <h3>10am - Free Food</h3>
+    <p>After the race, join us at the refreshment tent for a complimentary spread featuring breakfast burritos, fresh fruit, granola bars, and bottled water. Coffee and sports drinks will also be available to help you refuel and recover.</p>
+  </div>
+</div>
+
+<div class="schedule-item">
+  <img src="./img/Postraceparty.jpg" alt="Image description" width="300" height="200" />
+  <div class="schedule-text">
+    <h3>11am - Post Race Party</h3>
+    <p>Celebrate your achievement! Enjoy live music from local bands, photo ops with Air and Space Force mascots, and lawn games for all ages. Food trucks will be serving up local favorites, and the awards.</p>
+  </div>
+</div>
+
+        <!-- rsvp
+
+Purpose:
+- Section for users to sign up for the event
+- Contains a form for users to input their information, 
+and a list of other users who have signed up
+
+When To Modify:
+- [ ] Project 6 (REQUIRED FEATURE) 
+- [ ] Project 6 (STRETCH FEATURE) 
+- [ ] Any time after
+--> 
+<div id="rsvp">
+    <h2>RSVP</h2>
+    <div class="rsvp-container">
+        <div class="rsvp-para">
+            <p>
+Ready to be part of something extraordinary? Join fellow runners, service members, and supporters at the 2025 Air X Space Force 10K! Whether you're racing for a personal best or soaking in the patriotic energy, this event promises unforgettable memories and a powerful community experience. Spots are limited—secure yours today by filling out the RSVP form below. Let’s run united. Let’s run beyond.
+</p>
+
+        </div>
+        <div class="rsvp-participants">
+            <p>🎟️ Mike from Texas has RSVP'd.</p>
+            <p>🎟️ Amy from New York has RSVP'd.</p>
+            <p>🎟️ Teresa from Montana has RSVP'd.</p>
+        </div>
+    </div>
+
+    <!--- Sign RSVP Form --->
+    <div class="form-container">
+      <form id="rsvp-form" title="rsvp-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="state">Home State:</label>
+        <input type="text" id="state" name="state" />
+
+        <button id="rsvp-button" type="submit">Submit RSVP</button>
+    </form>
+  </div>
+
+
+<!-- success modal
+
+Purpose:
+- Modal that appears when a user successfully signs up for the event
+- Contains a personalized message and image
+
+When To Modify:
+- [ ] Project 9 (REQUIRED FEATURE)
+- [ ] Project 9 (STRETCH FEATURE) 
+- [ ] Any time after
+--> 
+
+<div id="success-modal" class="modal">
+    <div class="modal-container">
+        <div id="modal-item">
+            <p id="modal-text">Thanks for confirming! We'll see you there!</p>
+        </div>
+        <div id="modal-item">
+            <img src="img/Thumbsup.png" alt="Thumbs up image" style="width: 180px; height: auto;" />
+        </div>
+    </div>
+</div>
+
+
+
+        <!-- links
+
+        Purpose:
+        - Links to other resources related to the event
+
+        When To Modify:
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        -->
+            
+        <!-- footer [PLACEHOLDER] [ADDED IN UNIT 3] -->
+       <script src="index.js"></script>
+
+    </body>
+</html>
